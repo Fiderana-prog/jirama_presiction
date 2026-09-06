@@ -1,0 +1,8 @@
+{
+  "sampled_rows": 250,
+  "feature_count": 47,
+  "comparisons": 11750,
+  "max_abs_diff": 3.197442310920451e-14,
+  "mismatches_over_1e_10": 0,
+  "passed": true
+}

@@ -1,0 +1,10 @@
+check,passed,detail,status
+Dossier notebook 24 valide,True,/kaggle/input/datasets/fideranayvesdenis/jirama-notebook24-simple/jirama_notebook24_simple,PASS
+Notebook 24 valide,True,10/10,PASS
+Modèle 6h sélectionné,True,HIST_GRADIENT_BOOSTING,PASS
+Modèle 24h sélectionné,True,RANDOM_FOREST,PASS
+Fichier modèle 6h copié,True,selected_model_6h.joblib,PASS
+Fichier modèle 24h copié,True,selected_model_24h.joblib,PASS
+Références percentile créées,True,1212,PASS
+Vue API créée,True,52566,PASS
+Visualisations sauvegardées,True,12,PASS

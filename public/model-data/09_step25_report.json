@@ -1,0 +1,36 @@
+{
+  "year": 2024,
+  "status": "FINAL_MODELS_SELECTED_AND_PACKAGED",
+  "selected_models": [
+    {
+      "horizon": "24h",
+      "model": "RANDOM_FOREST",
+      "complexity": 50,
+      "roc_auc_proxy": 0.2748411978221415,
+      "average_precision_proxy": 0.0018115942028985,
+      "mean_percentile": 95.64814814814817,
+      "worst_percentile": 93.47222222222224,
+      "top10_rate": 1.0,
+      "final_score": 62.001319150366335,
+      "reliability_status": "MVP_CANDIDATE"
+    },
+    {
+      "horizon": "6h",
+      "model": "HIST_GRADIENT_BOOSTING",
+      "complexity": 100,
+      "roc_auc_proxy": 0.370185772541912,
+      "average_precision_proxy": 0.0004573896594583,
+      "mean_percentile": 85.23148148148148,
+      "worst_percentile": 75.27777777777777,
+      "top10_rate": 0.3333333333333333,
+      "final_score": 55.93521455302153,
+      "reliability_status": "EXPERIMENTAL"
+    }
+  ],
+  "model_1h": "UNAVAILABLE_INSUFFICIENT_LOCAL_DATA",
+  "scores_are_probabilities": false,
+  "ready_for_api_prototype": true,
+  "production_ready": false,
+  "plot_count": 12,
+  "next_step": "Créer l'API FastAPI avec selected_model_6h.joblib et selected_model_24h.joblib."
+}

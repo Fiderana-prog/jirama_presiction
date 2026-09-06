@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: jirama-predictive-api
+    runtime: docker
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: API_ROOT_PATH
+        value: ""
+      - key: CORS_ORIGINS
+        value: https://jirama-predictive.onrender.com
+
+  - type: web
+    name: jirama-predictive
+    runtime: docker
+    rootDir: .
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: NEXT_PUBLIC_PREDICTION_API_URL
+        value: https://jirama-predictive-api.onrender.com
+      - key: NEXT_PUBLIC_SUPABASE_URL
+        sync: false
+      - key: NEXT_PUBLIC_SUPABASE_ANON_KEY
+        sync: false

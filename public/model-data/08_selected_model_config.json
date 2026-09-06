@@ -1,0 +1,29 @@
+{
+  "version": "JIRAMA_MADAGASCAR_MODELS_V1",
+  "year": 2024,
+  "method": "POSITIVE_UNLABELED_BAGGING",
+  "1h": {
+    "status": "INSUFFICIENT_LOCAL_DATA",
+    "model": null
+  },
+  "6h": {
+    "model": "HIST_GRADIENT_BOOSTING",
+    "file": "models/selected_model_6h.joblib",
+    "status": "EXPERIMENTAL",
+    "score_semantics": "RISK_RANKING_SCORE_NOT_PROBABILITY"
+  },
+  "24h": {
+    "model": "RANDOM_FOREST",
+    "file": "models/selected_model_24h.joblib",
+    "status": "MVP_CANDIDATE",
+    "score_semantics": "RISK_RANKING_SCORE_NOT_PROBABILITY"
+  },
+  "risk_levels": {
+    "LOW": "< 80th percentile",
+    "MODERATE": "80th to < 95th percentile",
+    "HIGH": "95th to < 99th percentile",
+    "CRITICAL": ">= 99th percentile"
+  },
+  "scikit_learn_version_required": "1.6.1",
+  "production_ready": false
+}
