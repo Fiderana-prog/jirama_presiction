@@ -90,6 +90,7 @@ _cors_origins = [
     "http://127.0.0.1:3000",
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "https://jirama-predictive.onrender.com/",
 ]
 _extra_cors = os.getenv("CORS_ORIGINS", "").strip()
 if _extra_cors:
